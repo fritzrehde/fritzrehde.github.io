@@ -1,2 +1,1 @@
-# fritzrehde.github.io
-My personal website.
+My personal website hosted using GitHub Pages.

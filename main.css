@@ -10,19 +10,19 @@ html, body {
 .wrapper {
   display: flex;
   flex-direction: row;
-  background-color: white;
-  max-width: 50%;
+  width: 50%;
+	min-width: 500px;
   height: 80%;
 }
 
 .left, .right {
-  background-color: white;
-  margin: 5px;
-  max-width: 50%;
+	font-family: "Monaco", monospace;
+  width: 50%;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 5px;
 }
 
 .left {
@@ -30,14 +30,21 @@ html, body {
   justify-content: center;
 }
 
+.right {
+	font-size: 18px;
+}
+
 .profile-picture {
+	width: 45%;
+	min-width: 100px;
+	height: auto;
   border-radius: 50%;
 }
 
 .social-links {
   list-style: none;
   padding-left: 0px;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .social-links li {
@@ -48,7 +55,7 @@ html, body {
 .social-links a {
   text-decoration: none;
 	color: grey;
-  padding: 4px;
+  padding: 2px;
 }
 
 .social-links a:hover {

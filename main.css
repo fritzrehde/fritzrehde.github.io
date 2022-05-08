@@ -8,7 +8,7 @@ html, body {
 	font-family: "Monaco", monospace;
 }
 
-.wrapper {
+.container {
   display: flex;
   flex-direction: row;
   width: 40%;
@@ -35,10 +35,10 @@ html, body {
 }
 
 @media (max-width: 700px) {
-	.wrapper {
+	.container {
+		flex-direction: column;
 		flex: 100%;
 		min-width: 0px;
-		flex-direction: column;
 	}
 
 	.left, .right {
@@ -51,6 +51,7 @@ html, body {
 }
 
 .profile-picture {
+	display: block;
 	width: 45%;
 	min-width: 120px;
 	max-width: 180px;

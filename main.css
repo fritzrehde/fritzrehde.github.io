@@ -5,35 +5,55 @@ html, body {
   height: 100%;
   margin: 0px;
   padding: 0px;
+	font-family: "Monaco", monospace;
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
   width: 40%;
-	min-width: 500px;
+	min-width: 700px;
 }
 
 .left, .right {
-	font-family: "Monaco", monospace;
-  width: 50%;
-  flex: 1;
   display: flex;
+	flex: 50%;
   flex-direction: column;
   justify-content: center;
-}
-
-.left {
   align-items: center;
 }
 
+.left {
+}
+
 .right {
+}
+
+.bio {
 	font-size: 18px;
+	padding-right: 5px;
+}
+
+@media (max-width: 700px) {
+	.wrapper {
+		flex: 100%;
+		min-width: 0px;
+		flex-direction: column;
+	}
+
+	.left, .right {
+		flex: 100%;
+	}
+
+	.bio {
+		padding: 0 20px;
+	}
 }
 
 .profile-picture {
 	width: 45%;
 	min-width: 120px;
+	max-width: 180px;
 	height: auto;
   border-radius: 50%;
 }

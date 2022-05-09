@@ -8,11 +8,10 @@ html, body {
 	font-family: "Monaco", monospace;
 }
 
-.container {
-	/* background-color: lightblue; */
+.wrapper {
   display: flex;
   flex-direction: row;
-  width: 40%;
+  flex: 40%;
 	min-width: 700px;
 }
 
@@ -36,23 +35,14 @@ html, body {
 }
 
 @media (max-width: 700px) {
-	html {
-		height: initial;
-	}
-
-	.container {
-		flex-direction: column;
-		/* flex: 100%; */
-		flex: 1;
+	.wrapper {
+		flex: 100%;
 		min-width: 0px;
+		flex-direction: column;
 	}
 
 	.left, .right {
-		/* flex: 100%; */
-	}
-
-	.left {
-		padding-top: 40px;
+		flex: 100%;
 	}
 
 	.bio {
@@ -61,7 +51,6 @@ html, body {
 }
 
 .profile-picture {
-	/* flex: 1; */
 	width: 45%;
 	min-width: 120px;
 	max-width: 180px;
@@ -70,13 +59,11 @@ html, body {
 }
 
 .name {
-	/* flex: 2; */
 	font-size: 28px;
 	font-weight: bold;
 }
 
 .social-links {
-	/* flex: 1; */
   list-style: none;
   padding-left: 0px;
   font-size: 22px;

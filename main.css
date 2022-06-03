@@ -8,17 +8,17 @@
 	--fg: white;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--bg: black;
-		--fg: white;
-	}
+/* @media (prefers-color-scheme: dark) { */
+/* 	:root { */
+/* 		--bg: black; */
+/* 		--fg: white; */
+/* 	} */
 
-	.alternate-theme {
-		--bg: white;
-		--fg: black;
-	}
-}
+/* 	.alternate-theme { */
+/* 		--bg: white; */
+/* 		--fg: black; */
+/* 	} */
+/* } */
 
 body {
 	background-color: var(--bg);
@@ -100,17 +100,21 @@ body {
   margin-right: 4px;
 }
 
-.social-links a, .theme-button {
+.social-links a, button {
 	color: grey;
   padding: 6px;
   font-size: 22px;
 }
 
-.theme-button {
+#theme-icon, #theme-button {
+	font-size: 18px;
+}
+
+button {
 	background-color: var(--bg);
 	border: none;
 }
 
-.social-links a:hover, .theme-button:hover {
+.social-links a:hover, button:hover {
 	color: var(--fg);
 }

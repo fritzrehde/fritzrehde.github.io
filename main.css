@@ -103,6 +103,9 @@ body {
 .social-links a, .theme-icon {
 	color: grey;
   padding: 6px;
+}
+
+.social-links a {
   font-size: 22px;
 }
 

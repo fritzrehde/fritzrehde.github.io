@@ -1,8 +1,10 @@
-function toggle_theme() {
-	var element = document.body;
-	element.classList.toggle("alternate-theme");
+window.onload = function() {
+	if (window.matchMedia("(prefers-color-scheme: dark)").matches)
+		toggle_theme();
+}
 
-	var button = document.getElementById("toggle-icon");
-	button.classList.toggle('bi-toggle-on');
+function toggle_theme() {
+	document.body.classList.toggle("alternate-theme");
+	document.getElementById("toggle-icon").classList.toggle('bi-toggle-on');
 }
 

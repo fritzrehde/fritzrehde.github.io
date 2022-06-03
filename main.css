@@ -8,18 +8,6 @@
 	--fg: white;
 }
 
-/* @media (prefers-color-scheme: dark) { */
-/* 	:root { */
-/* 		--bg: black; */
-/* 		--fg: white; */
-/* 	} */
-
-/* 	.alternate-theme { */
-/* 		--bg: white; */
-/* 		--fg: black; */
-/* 	} */
-/* } */
-
 body {
 	background-color: var(--bg);
 	color: var(--fg);
@@ -32,7 +20,6 @@ body {
   padding: 0px;
 	position: absolute;
 }
-
 
 .container {
   display: flex;
@@ -100,7 +87,7 @@ body {
   margin-right: 4px;
 }
 
-.social-links a, .theme-icon {
+.social-links a, .theme-button {
 	color: grey;
   padding: 6px;
 }
@@ -109,12 +96,12 @@ body {
   font-size: 22px;
 }
 
-.theme-icon {
+.theme-button {
 	background-color: var(--bg);
 	font-size: 18px;
 	border: none;
 }
 
-.social-links a:hover, .theme-icon:hover {
+.social-links a:hover, .theme-button:hover {
 	color: var(--fg);
 }

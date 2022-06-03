@@ -100,21 +100,18 @@ body {
   margin-right: 4px;
 }
 
-.social-links a, button {
+.social-links a, .theme-icon {
 	color: grey;
   padding: 6px;
   font-size: 22px;
 }
 
-#theme-icon, #theme-button {
-	font-size: 18px;
-}
-
-button {
+.theme-icon {
 	background-color: var(--bg);
+	font-size: 18px;
 	border: none;
 }
 
-.social-links a:hover, button:hover {
+.social-links a:hover, .theme-icon:hover {
 	color: var(--fg);
 }

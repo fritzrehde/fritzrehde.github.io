@@ -10,6 +10,9 @@
 
 	<body>
 		<script type="text/javascript" src="theme.js"></script>
+		<script>
+			hideBody();
+		</script>
 
 		<div class="container">
 
@@ -21,7 +24,7 @@
 					<li><a href="https://www.linkedin.com/in/fritzrehde/" class="bi-linkedin" target=_blank></a></li>
 					<li><a href="mailto:fritzrehde.work@gmail.com" class="bi-envelope-fill" target=_blank></a></li>
 					<li>
-						<button class="theme-button" onclick="toggle_theme()">
+						<button class="theme-button" onclick="toggleTheme()">
 							<i class="bi-brightness-high-fill"></i>
 							<i id="toggle-icon" class="bi-toggle-off"></i>
 							<i class="bi-moon-fill"></i>
@@ -49,5 +52,9 @@
 
 		</div>
 
+		<script>
+			initTheme();
+			showBody();
+		</script>
 	</body>
 </html>

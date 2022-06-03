@@ -1,9 +1,9 @@
-:root {
+body.light {
 	--bg: white;
 	--fg: black;
 }
 
-.alternate-theme {
+body.dark {
 	--bg: black;
 	--fg: white;
 }
